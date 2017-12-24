@@ -3,40 +3,46 @@
 <head>
 	<title>Trivia Game</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+	  <script src="assets/javascript/app.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 -->
 	
 	
 </head>
 <body>
 
-	<div class="container1">
+  <h1>Try your Trivia Skills!</h1>
 
-	<h1>Trivia Game!</h1>
-	<br>
-	<br>
+    <form id="quiz" name = "quiz">
+
+      <p>What city won the 1986 Super Bowl?</p>
+      <input type = "radio" id = "mc" name = "question1" value = "New England">New England
+      <input type = "radio" id = "mc" name = "question1" value = "New York">New York<br>
+      <input type = "radio" id = "mc" name = "question1" value = "Chicago">Chicago
+      <input type = "radio" id = "mc" name = "question1" value = "Pittsburgh">Pittsburgh<br>
+
+      <p>What is the Capital of Illinois?</p>
+      <input type = "radio" id = "mc" name = "question2" value = "Moline">Moline
+      <input type = "radio" id = "mc" name = "question2" value = "Springfield">Springfield<br>
+      <input type = "radio" id = "mc" name = "question2" value = "Chicago">Chicago
+      <input type = "radio" id = "mc" name = "question2" value = "Evanston">Evanston<br>
+
+
+      <p>What year did Northwestern join the Big Ten?</p>
+      <input type = "radio" id = "mc" name = "question3" value = "1895">1895
+      <input type = "radio" id = "mc" name = "question3" value = "1900">1900<br>
+      <input type = "radio" id = "mc" name = "question3" value = "1920">1920
+      <input type = "radio" id = "mc" name = "question3" value = "1905">1905<br>
+
+      <input id ="button" type = "button" value = "See how many you got right!" onclick = "check();">
+
+
+</form>
+<div id="after_submit">
+  <p id="message"></p>
+  <p id = "number_correct"></p>
+  <img id="picture">
 </div>
-	<div id="quizContainer" class="container">
-     <div class="title">Trivia Quiz</div>
-    <div id="question" class="question"></div>
-    <label class="option"><input type="radio" name="option" value"1" /> <span id="opt1"></span></label>
-    <label class="option"><input type="radio" name="option" value"2" /> <span id="opt2"></span></label>
-    <label class="option"><input type="radio" name="option" value"3" /> <span id="opt3"></span></label>
-    <label class="option"><input type="radio" name="option" value"4" /> <span id="opt4"></span></label>
-    <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
-    </div>
-    <div id="result" class="container result" style="display:none;">
-    </div>
 
-
-
-
-
-
-<link src="assets/javascript/app.js">
-	
-
-
-</script>
 </body>
 </html>
