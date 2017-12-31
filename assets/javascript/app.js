@@ -1,3 +1,25 @@
+ var timer= 20;
+ var sec = 0;
+ var setTimerout = 0;
+
+
+ function startTimer () {
+   sec = parseInt(timer%20);
+
+  if(timer < 1) {
+
+     setTimeout(function()
+    {
+      alert("Out of Time! Reset Browser."); });
+
+     // window.location= "TimeOver.html";
+  }
+
+   document.getElementById("time").innerHTML ="Time Left:" + sec.toString(); timer--;
+   setTimeout(function() {
+     startTimer();
+  }, 1000);
+ }
 function check() {
 
 var question1 = document.quiz.question1.value;
